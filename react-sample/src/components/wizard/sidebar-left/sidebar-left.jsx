@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import MultiStep from 'react-multistep';
+import Multistep from '../../../react-multistep/index';
+import StepOne from '../../StepOne';
+import StepTwo from '../../StepTwo';
+import StepThree from '../../StepThree';
+import { StepFour } from '../../StepFour';
 
 class SidebarLeft extends Component {
 
