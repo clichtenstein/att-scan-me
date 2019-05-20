@@ -6,6 +6,7 @@ class Wizard extends Component {
     render() {
         return (
             <div>
+                Att Scan me
                 <SidebarLeft> </SidebarLeft> 
                 <SidebarRight ></SidebarRight>
             </div>
