@@ -32,6 +32,11 @@
   }
 }
 
+.connect_wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
 .step-title{
   font-size: 25px;
   font-weight: bold;

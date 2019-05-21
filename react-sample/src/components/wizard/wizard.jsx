@@ -16,7 +16,7 @@ class Wizard extends Component {
                 </div>
                 <br />
                 <div>
-                    <a href="https://www.youtube.com/">Check out the full setup tutorial</a>
+                    <a href="https://youtu.be/_SoBVyft75c" target="_blank">Check out the full setup toturial</a>
                 </div>
                 <br />
                 <div>
