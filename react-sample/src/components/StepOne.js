@@ -27,19 +27,21 @@ export class StepOne extends React.Component {
   
   render () {
     return (
-      <div>
+      <div className='step-content'>
         <div className='row'>
-          <label class="">Stock taking</label>
-          <div className='six columns'>
-            <label>Osprey BOX</label>
+          <label >Stock taking</label>
+          <div>
+            <label className="checkbox-container">
+              <span className="device-name">Osprey BOX</span>
             <input
               className='u-full-width'
               type='checkbox'
               onChange={this.handleFirstNameChanged}
               value={this.state.firstName}
             />
-            <img src={osprey} alt=""/>
-
+            <span className="checkmark"></span>
+            <img className="device-img" src={osprey} alt=""/>
+            </label>
             <label>HDMI cabel</label>
             <input
               className='u-full-width'

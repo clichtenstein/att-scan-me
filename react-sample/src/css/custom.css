@@ -280,3 +280,9 @@ table tbody th {
   line-height: 0.1rem;
   margin-top: 6rem;
 }
+
+.step-content{
+    height: 650px;
+    width: 70%;
+    margin: auto;
+}
