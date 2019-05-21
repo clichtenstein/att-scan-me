@@ -42,8 +42,9 @@ export class StepTwo extends React.Component {
                       <img className="device-img connect_img" src={networkConnect} alt=""/>
                   </li>
                   <li className="remote_li">
+                      <label className="connect_item">Remote</label>
                       <img className="device-img remote" src={remote} alt=""/>
-                      <span>Remove tab from the back of the remote           </span>
+                      <span className="text">Remove tab from the back of the remote</span>
                   </li>
               </ol>
           </div>
