@@ -10,14 +10,15 @@ class Wizard extends Component {
                 <SidebarLeft> </SidebarLeft> 
                 <SidebarRight ></SidebarRight>
 
-                <br>
-                </br>
+                <br />
                 <div>
                     <a href="https://www.youtube.com/">Upload your unboxing experience to social networks</a>
                 </div>
+                <br />
                 <div>
-                    <a href="https://www.youtube.com/">Check out the full setup toturial</a>
+                    <a href="https://www.youtube.com/">Check out the full setup tutorial</a>
                 </div>
+                <br />
                 <div>
                     <button>Get Support</button>
                 </div>

@@ -8,10 +8,10 @@ class SidebarLeft extends Component {
     constructor (props) {
         super(props)
         this.state = {
-            options :  [{name: 'Osprey BOX', imageUrl: 'att-osprey.png', checked : false},
-            {name: 'HDMI cabel', imageUrl: 'CBL-SGL-HDMI-MICRO-MINI-F36.jpg', checked : false},
-            {name: 'POWER cabel', imageUrl: 'power.png', checked : false},
-            {name: 'REMOTE control', imageUrl: 'remote.png', checked : false}]
+            options :  [{name: 'Osprey Box', imageUrl: 'att-osprey.png', checked : false},
+            {name: 'HDMI Cable', imageUrl: 'CBL-SGL-HDMI-MICRO-MINI-F36.jpg', checked : false},
+            {name: 'Power Cable', imageUrl: 'power.png', checked : false},
+            {name: 'Remote Control', imageUrl: 'remote.png', checked : false}]
         }
       this.onChange = this.onChange.bind(this);
     };
