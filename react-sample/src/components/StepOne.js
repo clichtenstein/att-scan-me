@@ -28,9 +28,9 @@ export class StepOne extends React.Component {
   render () {
     return (
       <div className='step-content'>
-        <div className='row'>
-          <label >Stock taking</label>
-          <div>
+          <span className="step-title" >Stock taking</span>
+          <span className="step-sub-title">Please confirm the following components exist:</span>
+          <div className="device-list">
             <label className="checkbox-container">
               <span className="device-name">Osprey BOX</span>
             <input
@@ -67,7 +67,6 @@ export class StepOne extends React.Component {
             />
             <img src={remote} alt=""/>
           </div>
-        </div>
       </div>
     )
   }

@@ -25,7 +25,7 @@ export class StepTwo extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="step-content">
           <div className='row'>
               <label >Connect your device</label>
               <ol type="1">

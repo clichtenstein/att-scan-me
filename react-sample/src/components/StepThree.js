@@ -3,50 +3,40 @@ import React from 'react'
 export class StepThree extends React.Component {
   constructor () {
     super()
-    this.state = { 
-      password: '', 
-      passwordConfirm: '' 
+    this.state = {
+      showDiv: true,
     }
-    this.handlePasswordChanged = this.handlePasswordChanged.bind(this);
-    this.handlePasswordConfirmChanged = this.handlePasswordConfirmChanged.bind(this);
+    this.handleClick = this.onClickBtn.bind(this);
+
   }
 
-  handlePasswordChanged (event) {
-    this.setState({password: event.target.value})
-  }
 
-  handlePasswordConfirmChanged (event) {
-    this.setState({passwordConfirm: event.target.value})
+
+  onClickBtn () {
+    this.setState({showDiv: false})
   }
 
   render () {
     return (
-      <div>
-        <div className='row'>
-          <div className='six columns'>
-            <label>Password</label>
-            <input
-              className='u-full-width required'
-              placeholder='Password'
-              type='password'
-              onChange={this.handlePasswordChanged}
-              value={this.state.password}
-              autoFocus
-            />
-          </div>
+      <div className="step-content">
+        <div className={this.state.showDiv ? '' : 'hidden'}>
+          <span className="step-title" >Setup your device</span>
+          <span className="step-subtitle">Turn on your TV</span>
+          <div>Follow the onscreen prompts</div>
+          <a href="#" className="success-btn" onClick={this.handleClick}>
+            Device connected successfully
+          </a>
         </div>
-        <div className='row'>
-          <div className='six columns'>
-            <label>Confirm password</label>
-            <input
-              className='u-full-width'
-              placeholder='Confirm Password'
-              type='password'
-              onChange={this.handlePasswordConfirmChanged}
-              value={this.state.passwordConfirm}
-            />
-          </div>
+        <div className={this.state.showDiv ? 'hidden' : ''}>
+          <p className="step3p">
+          Congratulations on setting up your new DirectTV Osprey
+            In AT&T we are always looking to improve the quality of our services.<br/>
+          <a href="https://www.youtube.com/"> Send us your feedback</a>
+          </p>
         </div>
+
+
+
       </div>
     )
   }
