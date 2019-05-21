@@ -37,6 +37,14 @@
   font-weight: bold;
   display: block;
 }
+
+.step-content{
+  width: 70%;
+  margin: 10px auto;
+height: 550px;
+}
+
+
 .step-subtitle{
   font-size: 17px;
   text-align: left;

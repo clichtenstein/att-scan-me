@@ -27,7 +27,7 @@ export class StepTwo extends React.Component {
     return (
       <div className="step-content">
           <div className='row'>
-              <label >Connect your device</label>
+              <label className='step-title'>Connect your device</label>
               <ol type="1">
                   <li>
                       <label className="connect_item">HDMI</label>
