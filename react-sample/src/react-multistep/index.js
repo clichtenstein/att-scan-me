@@ -77,19 +77,19 @@ export default function MultiStep(props) {
         </ol>
         {props.steps[compState].component}
         <div style={props.showNavigation ? {} : { display: 'none' }}>
-          <button
+          <a href="#" className="prev-next-btn"
             style={buttonsState.showPreviousBtn ? {} : { display: 'none' }}
             onClick={previous}
           >
             Previous
-          </button>
+          </a>
 
-          <button
+          <a href="#" className="prev-next-btn"
             style={buttonsState.showNextBtn ? {} : { display: 'none' }}
             onClick={next}
           >
             Next
-          </button>
+          </a>
         </div>
       </div>
   )
