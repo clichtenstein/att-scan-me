@@ -1,71 +1,63 @@
-import React from 'react'
-import osprey from './../images/att-osprey.png';
-import hdmi from './../images/CBL-SGL-HDMI-MICRO-MINI-F36.jpg';
-import power from './../images/power.png';
-import remote from './../images/remote.png';
+import React from 'react';
+import './stepOne.scss';
+
 
 export class StepOne extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = { 
       firstName: '', 
-      lastName: '',
-      myOptions : ["Meat Lover", "Veggie Heaven", "Hawaii-5-0", "Inferno"]
+      lastName: ''
     }
-    this.handleFirstNameChanged = this.handleFirstNameChanged.bind(this);
-    this.handleLastNameChanged = this.handleLastNameChanged.bind(this);
+    this.imageDir = '/images/';
+    // this.handleFirstNameChanged = this.handleFirstNameChanged.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
   }
 
-  handleFirstNameChanged (event) {
-    this.setState({firstName: event.target.value})
-  }
+  // handleFirstNameChanged (event) {
+  //   this.setState({firstName: event.target.value})
+  // }
 
-  handleLastNameChanged (event) {
-    this.setState({lastName: event.target.value})
-  }
+  // handleLastNameChanged (event) {
+  //   this.setState({lastName: event.target.value})
+  // }
+
+  // handleChange(e) {
+  //   this.props.onCheckboxChange(e.target.value);
+  // }
 
   
   render () {
     return (
       <div className='step-content'>
+        {/* {
+           (this.props.isWarning) ?
+            <div className='warning'>
+              Please confirm missing item
+            </div> : ''
+        } */}
         <div className='row'>
           <label >Stock taking</label>
-          <div>
-            <label className="checkbox-container">
-              <span className="device-name">Osprey BOX</span>
-            <input
-              className='u-full-width'
-              type='checkbox'
-              onChange={this.handleFirstNameChanged}
-              value={this.state.firstName}
-            />
-            <span className="checkmark"></span>
-            <img className="device-img" src={osprey} alt=""/>
-            </label>
-            <label>HDMI cabel</label>
-            <input
-              className='u-full-width'
-              type='checkbox'
-              onChange={this.handleFirstNameChanged}
-              value={this.state.firstName}
-            />
-             <img src={hdmi} alt=""/>
-            <label>POWER cabel</label>
-            <input
-              className='u-full-width'
-              type='checkbox'
-              onChange={this.handleFirstNameChanged}
-              value={this.state.firstName}
-            />
-             <img src={power} alt=""/>
-             <label>REMOTE control</label>
-            <input
-              className='u-full-width'
-              type='checkbox'
-              onChange={this.handleFirstNameChanged}
-              value={this.state.firstName}
-            />
-            <img src={remote} alt=""/>
+          <div className="checkbox-wrapper">
+          {
+            this.props.options.map((option, i) => (
+              <div className="checkbox-item" key={option.name}>
+                <label className="checkbox-container">
+                <span className="device-name">{option.name}</span>
+                <input
+                  className='u-full-width'
+                  type='checkbox'
+                  onChange={(e) => this.props.onChange(i, e)}
+                  value={option.checked}
+                />
+                <span className="checkmark"></span>
+                <img className="device-img" src={this.imageDir + option.imageUrl} alt=""/>
+                </label>  
+              </div>
+              )
+            )
+          }
+      
           </div>
         </div>
       </div>

@@ -44,7 +44,17 @@ export default function MultiStep(props) {
     setButtons(getButtonsState(indx, props.steps.length))
   }
 
-  const next = () => setStepState(compState + 1)
+  const next = () => {
+    const options = props.steps[compState].component.props && props.steps[compState].component.props.options;
+    let isNonChecked = options.some( option => option.checked === false );
+    
+    if (isNonChecked)  {
+      //props.steps[compState].component.props.isWarning = true
+    }
+    else {
+      setStepState(compState + 1)
+    }
+  }
   
   const previous = () => setStepState((compState > 0) ? compState - 1 : compState)
 
@@ -83,7 +93,6 @@ export default function MultiStep(props) {
           >
             Previous
           </button>
-
           <button
             style={buttonsState.showNextBtn ? {} : { display: 'none' }}
             onClick={next}
