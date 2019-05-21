@@ -46,10 +46,15 @@ export default function MultiStep(props) {
 
   const next = () => {
     const options = props.steps[compState].component.props && props.steps[compState].component.props.options;
-    let isNonChecked = options.some( option => option.checked === false );
+    if (options) {
+      let isNonChecked = options.some( option => option.checked === false );
 
-    if (isNonChecked)  {
-      //props.steps[compState].component.props.isWarning = true
+      if (isNonChecked)  {
+        //props.steps[compState].component.props.isWarning = true
+      }
+      else {
+        setStepState(compState + 1)
+      }
     }
     else {
       setStepState(compState + 1)

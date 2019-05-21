@@ -30,20 +30,27 @@ export class StepTwo extends React.Component {
               <label className='step-title'>Connect your device</label>
               <ol type="1">
                   <li>
+                      <span className="connect_wrapper">
                       <label className="connect_item">HDMI</label>
                       <img className="device-img connect_img" src={hdmiConnect} alt=""/>
+                      </span>
                   </li>
                   <li >
+                      <span className="connect_wrapper">
                       <label className="connect_item">POWER</label>
                       <img className="device-img connect_img" src={powerConnect} alt=""/>
+                      </span>
                   </li>
                   <li>
+                      <span className="connect_wrapper">
                       <label className="connect_item">LAN</label>
                       <img className="device-img connect_img" src={networkConnect} alt=""/>
+                      </span>
                   </li>
                   <li className="remote_li">
+                      <label className="connect_item">Remote</label>
                       <img className="device-img remote" src={remote} alt=""/>
-                      <span>Remove tab from the back of the remote           </span>
+                      <span className="text">Remove tab from the back of the remote</span>
                   </li>
               </ol>
           </div>
