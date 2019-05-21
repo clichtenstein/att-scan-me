@@ -37,7 +37,10 @@ export class StepOne extends React.Component {
             </div> : ''
         } */}
         <div className='row'>
-          <label >Stock taking</label>
+        <span className="step-title" >Stock taking</span>
+        <br />
+          <span className="step-sub-title">Please confirm the following components exist:</span>
+          <br />
           <div className="checkbox-wrapper">
           {
             this.props.options.map((option, i) => (

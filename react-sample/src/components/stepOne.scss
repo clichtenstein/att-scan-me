@@ -1,9 +1,14 @@
 .step-content{
     width: 70%;
-    margin: 30px auto;
+    margin: 10px auto;
     .checkbox-item {
         display: flex;
         height: 80px;
+
+    }
+    .step-sub-title {
+        margin-bottom: 10px;
+        display: block;
     }
 }
 

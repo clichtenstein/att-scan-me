@@ -32,6 +32,18 @@
   }
 }
 
+.step-title{
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+}
+.step-subtitle{
+  font-size: 17px;
+  text-align: left;
+}
+.device-list{
+  margin-top: 30px;
+}
 /* Customize the label (the container) */
 .checkbox-container {
   display: inline-flex;
@@ -39,7 +51,7 @@
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 17px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

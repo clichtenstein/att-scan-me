@@ -10,6 +10,8 @@ class Wizard extends Component {
                 <SidebarLeft> </SidebarLeft> 
                 <SidebarRight ></SidebarRight>
 
+                <br>
+                </br>
                 <div>
                     <a href="https://www.youtube.com/">Upload your unboxing experience to social networks</a>
                 </div>
@@ -17,8 +19,7 @@ class Wizard extends Component {
                     <a href="https://www.youtube.com/">Check out the full setup toturial</a>
                 </div>
                 <div>
-                    <input type="text" placeholder="Insert your phone number"></input>
-                    <button>Call me</button>
+                    <button>Get Support</button>
                 </div>
             </div>
         );

@@ -21,32 +21,16 @@ export class StepThree extends React.Component {
 
   render () {
     return (
-      <div>
-        <div className='row'>
-          <div className='six columns'>
-            <label>Password</label>
-            <input
-              className='u-full-width required'
-              placeholder='Password'
-              type='password'
-              onChange={this.handlePasswordChanged}
-              value={this.state.password}
-              autoFocus
-            />
-          </div>
-        </div>
-        <div className='row'>
-          <div className='six columns'>
-            <label>Confirm password</label>
-            <input
-              className='u-full-width'
-              placeholder='Confirm Password'
-              type='password'
-              onChange={this.handlePasswordConfirmChanged}
-              value={this.state.passwordConfirm}
-            />
-          </div>
-        </div>
+      <div className="step-content">
+        <span className="step-title" >Setup your device</span>
+        <span>Turn on your TV</span>
+        <div>Follow the onscreen prompts</div>
+
+        <button>
+        Device connected successfully
+        </button>
+
+
       </div>
     )
   }

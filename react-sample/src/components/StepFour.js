@@ -15,7 +15,7 @@ export class StepFour extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="step-content">
         <div className='row'>
           <div className='ten columns terms'>
             <span>By clicking "Accept" I agree that:</span>
