@@ -3,7 +3,6 @@ import Multistep from '../../../react-multistep/index';
 import StepOne from '../../StepOne';
 import StepTwo from '../../StepTwo';
 import StepThree from '../../StepThree';
-import { StepFour } from '../../StepFour';
 
 class SidebarLeft extends Component {
     constructor (props) {
@@ -37,7 +36,6 @@ class SidebarLeft extends Component {
             {name: 'StepOne', component: <StepOne options={this.state.options} onChange={this.onChange} isWarning="false" />},
             {name: 'StepTwo', component: <StepTwo/>},
             {name: 'StepThree', component: <StepThree/>},
-            {name: 'StepFour', component: <StepFour/>}
           ];
         return (
             <div>
