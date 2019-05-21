@@ -21,7 +21,7 @@ export class StepTwo extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="step-content">
         <div className='row'>
           <div className='six columns'>
             <label>Your email</label>

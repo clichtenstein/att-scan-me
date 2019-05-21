@@ -28,7 +28,6 @@ export class StepOne extends React.Component {
   render () {
     return (
       <div className='step-content'>
-        <div className='row'>
           <span className="step-title" >Stock taking</span>
           <span className="step-sub-title">Please confirm the following components exist:</span>
           <div className="device-list">
@@ -68,7 +67,6 @@ export class StepOne extends React.Component {
             />
             <img src={remote} alt=""/>
           </div>
-        </div>
       </div>
     )
   }
