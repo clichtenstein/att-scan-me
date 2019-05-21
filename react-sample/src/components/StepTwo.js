@@ -1,5 +1,9 @@
 import React from 'react'
-
+import osprey from "../images/att-osprey.png";
+import remote from "../images/remote.png";
+import hdmiConnect from "../images/hdmi_connect.png";
+import networkConnect from "../images/network_connect.png";
+import powerConnect from "../images/power_connect.png";
 export class StepTwo extends React.Component {
   constructor () {
     super()
@@ -22,31 +26,27 @@ export class StepTwo extends React.Component {
   render () {
     return (
       <div>
-        <div className='row'>
-          <div className='six columns'>
-            <label>Your email</label>
-            <input
-              className='u-full-width required'
-              placeholder='test@mailbox.com'
-              type='email'
-              onChange={this.handleEmailChanged}
-              value={this.state.email}
-              autoFocus
-            />
+          <div className='row'>
+              <label >Connect your device</label>
+              <ol type="1">
+                  <li>
+                      <label className="connect_item">HDMI</label>
+                      <img className="device-img connect_img" src={hdmiConnect} alt=""/>
+                  </li>
+                  <li >
+                      <label className="connect_item">POWER</label>
+                      <img className="device-img connect_img" src={powerConnect} alt=""/>
+                  </li>
+                  <li>
+                      <label className="connect_item">LAN</label>
+                      <img className="device-img connect_img" src={networkConnect} alt=""/>
+                  </li>
+                  <li className="remote_li">
+                      <img className="device-img remote" src={remote} alt=""/>
+                      <span>Remove tab from the back of the remote           </span>
+                  </li>
+              </ol>
           </div>
-        </div>
-        <div className='row'>
-          <div className='six columns'>
-            <label>Confirm email</label>
-            <input
-              className='u-full-width'
-              placeholder='Confirm email'
-              type='email'
-              onChange={this.handleEmailConfirmChanged}
-              value={this.state.emailConfirm}
-            />
-          </div>
-        </div>
       </div>
     )
   }

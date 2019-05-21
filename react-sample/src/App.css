@@ -69,6 +69,26 @@
   display: inline-block;
   margin-left: 50px;
 }
+.remote {
+  width: 50px;
+}
+
+.remote_li {
+  padding-right: 170px;
+}
+.remote_li .device-img {
+  margin-left: 0;
+}
+.connect_img {
+  width: 380px;
+  height: 55px;
+}
+
+.connect_item {
+  width: 60px;
+  display: inline-block;
+  text-align: left;
+}
 .device-name{
   display: inline-block;
   margin-left: 30px;
